@@ -1,0 +1,297 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #004d40;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#intro {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+#testSection {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#timer {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+button#nextQuestionBtn {
+    background-color: #4CAF50;
+    margin-top: 20px;
+}
+
+button#nextQuestionBtn:hover {
+    background-color: #45a049;
+} */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #333;
+}
+
+/* Стили для шапки */
+header {
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb); /* Ваш градиент */
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Стили для навигации */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    margin: 0;
+    background: #8BC34A; /* Светло-зеленый фон */
+    border-radius: 25px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #004d40;
+    transform: scale(1.1);
+}
+#intro {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+#testSection {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#timer {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5
+}
+
+#timer {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #d32f2f; /* Цвет таймера */
+}
+
+
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    /* Адаптация для навигации */
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 1.5em;
+    }
+
+    /* Контейнер с текстом и изображением */
+    .container {
+        flex-direction: column; /* Изменяем направление на колонку */
+        text-align: center;
+    }
+
+    .container img {
+        max-width: 80%; /* Уменьшаем размер изображения */
+        margin-top: 15px;
+    }
+
+    /* Уменьшаем размеры шрифта */
+    h3 {
+        font-size: 1.8em;
+    }
+
+    .h33 {
+        font-family: "Sour Gummy", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+       
+        font-size: 2.5em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Для очень маленьких экранов */
+    header h2 {
+        font-family: "Sour Gummy", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+       
+        font-size: 1.8em;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    .container img {
+        max-width: 90%;
+    }
+
+    .h33 {
+        font-family: "Sour Gummy", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+       
+        font-size: 2em;
+    }
+}
+.intro-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.step-text {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding-left: 15px;
+    border-left: 4px solid #a1c4fd; /* Вертикальная линия для выделения */
+}
+
+.summary-text {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #333;
+    background-color: #f1f8ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
